@@ -1,0 +1,7 @@
+.login_page {
+    background-color: $color_grey;
+ min-height: calc(100vh - 135px);
+    // @include flexCenter;
+  display: flex;
+  justify-content: center;
+}

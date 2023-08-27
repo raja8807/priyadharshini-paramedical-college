@@ -1,0 +1,51 @@
+.login_box {
+  background-color: white;
+  height: fit-content;
+  border-radius: 3px;
+  margin-top: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  .head {
+    border-radius: 3px 3px 0 0;
+    text-align: center;
+    background-color: $color_dark_blue;
+    color: white;
+    padding: 12px 0;
+  }
+
+  .body {
+    @include flexCenter;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    .controls {
+      @include flexCenter;
+      flex-direction: column;
+      gap: 20px;
+      input {
+        padding: 4px 10px;
+        width: 350px;
+        border-radius: 3px;
+        border: 2px solid $color_grey;
+      }
+    }
+
+    button {
+      padding: 4px 20px;
+      border: none;
+      background-color: $color_light_blue;
+      color: white;
+      border-radius: 3px;
+
+      &:not(:disabled) {
+        &:hover {
+          background-color: $color_dark_blue;
+        }
+      }
+
+      &:disabled {
+        opacity: 0.8;
+      }
+    }
+  }
+}
